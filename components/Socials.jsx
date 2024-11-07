@@ -3,11 +3,11 @@ import Link from "next/link";
 import {FaGithub, FaFacebook,FaLinkedinIn, FaInstagram,FaPhone} from "react-icons/fa";
 
 const socials = [
-     {icon: <FaGithub/>, path: ''},
-     {icon: <FaFacebook/>, path: ''},
-     {icon: <FaLinkedinIn/>, path: ''},
-     {icon: <FaInstagram/>, path: ''},
-     {icon: <FaPhone/>, path: ''},
+     {icon: <FaGithub/>, path: 'https://github.com/Binhchuoizzz'},
+     {icon: <FaFacebook/>, path: 'https://www.facebook.com/toi.binhducnguyen/'},
+     {icon: <FaLinkedinIn/>, path: 'https://www.linkedin.com/in/cve-alert-b700302b2/'},
+     {icon: <FaInstagram/>, path: 'https://www.instagram.com/binhchuoiz/?next=%2F'},
+     {icon: <FaPhone/>, path: '0922818727'},
 
 ]
 
