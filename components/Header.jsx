@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 
 //components
 import Nav from "./Nav";
+import Mobilenav from "./Mobilenav";
 
 const Header = () => {
     return (
@@ -11,7 +12,7 @@ const Header = () => {
                 {/* logo */}
                 <Link href="/">
                     <h1 className="text-4xl font-semibold">
-                        Nguyễn Đức Bình<span className="text-accent">.</span>
+                        Binh <span className="text-accent">.</span>
                     </h1>
                 </Link>
                 {/* desktop nav & hire me button*/}
@@ -23,7 +24,7 @@ const Header = () => {
                 </div>
                 {/* mobile nav */}
                 <div className="xl:hidden">
-                    mobile nav
+                    <Mobilenav />
                 </div>
             </div>
         </header>
