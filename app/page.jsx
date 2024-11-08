@@ -5,7 +5,6 @@ import { FiDownload } from "react-icons/fi";
 import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
-
 const Home = () => {
   return (
     <section className="h-full">
@@ -14,7 +13,7 @@ const Home = () => {
         xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">Software engineer</span>
             <h1 className="h1 mb-6">
               Hello I'm <br /> <span className="text-accent">Nguyen Duc Binh</span>
             </h1>
@@ -29,7 +28,7 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <span>Download CV</span>
+                <span><a href="/assets/cv/cv.pdf">Download CV</a></span>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">

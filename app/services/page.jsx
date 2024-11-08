@@ -52,7 +52,7 @@ const Services = () => {
                                                   {service.num}
                                              </div>
                                              <Link
-                                                  href={service.href}
+                                                  href="/contact"
                                                   className="w-[70px] h-[70px] rounded-full bg-white
                                                   group-hover:bg-accent translate-all duration-500 flex
                                                   justify-center items-center hover:-rotate-45"

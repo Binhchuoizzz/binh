@@ -46,38 +46,18 @@ const about = {
 // Experience Data
 const experience = {
      icon: '/assets/resume/badge.svg',
-     title: 'My experience',
-     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+     title: 'My Experience',
+     description: '"I was a cyber security student at FPT University and a front-end intern at Fpt Software."',
      items: [
           {
-               company: "FPT Software",
-               position: "Frontend Developer",
-               duration: "2021 - 2022",
+               company: "FPT University Student",
+               position: "Student",
+               duration: "2021 - 2024",
           },
           {
                company: "FPT Software",
                position: "Frontend Developer",
-               duration: "2021 - 2022",
-          },
-          {
-               company: "FPT Software",
-               position: "Frontend Developer",
-               duration: "2021 - 2022",
-          },
-          {
-               company: "FPT Software",
-               position: "Frontend Developer",
-               duration: "2021 - 2022",
-          },
-          {
-               company: "FPT Software",
-               position: "Frontend Developer",
-               duration: "2021 - 2022",
-          },
-          {
-               company: "FPT Software",
-               position: "Frontend Developer",
-               duration: "2021 - 2022",
+               duration: "2022 - 2023",
           },
      ]
 };
@@ -85,51 +65,36 @@ const experience = {
 // Education Data
 const education = {
      icon: '/assets/resume/cap.svg',
-     title: 'My education',
-     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+     title: 'My Education',
+     description: '"During my studies, I not only mastered the theory but also actively participated in real-life projects where I applied my knowledge to real-life situations and practiced problem-solving thinking. Thanks to that, I gained valuable experience and developed important skills to become an effective Frontend developer."',
      items: [
           {
-               institution: "FPT Software",
-               degree: "Frontend Developer",
-               duration: "2021 - 2022",
+               institution: "Van Phuc Secondary School",
+               degree: "National Math Olympiad",
+               duration: "2014 - 2016",
+          },
+          {
+               institution: "Trung Van High School",
+               degree: "City math student",
+               duration: "2017 - 2020",
+          },
+          {
+               institution: "FPT University Student",
+               degree: "Student",
+               duration: "2021 - 2024",
           },
           {
                institution: "FPT Software",
                degree: "Frontend Developer",
-               duration: "2021 - 2022",
-          },
-          {
-               institution: "FPT Software",
-               degree: "Frontend Developer",
-               duration: "2021 - 2022",
-          },
-          {
-               institution: "FPT Software",
-               degree: "Frontend Developer",
-               duration: "2021 - 2022",
-          },
-          {
-               institution: "FPT Software",
-               degree: "Frontend Developer",
-               duration: "2021 - 2022",
-          },
-          {
-               institution: "FPT Software",
-               degree: "Frontend Developer",
-               duration: "2021 - 2022",
-          },
-          {
-               institution: "FPT Software",
-               position: "Frontend Developer",
-               duration: "2021 - 2022",
+               duration: "2022 - 2023",
           },
      ]
 };
 
 // Skills Data
 const skills = {
-     title: 'My skills',
-     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+     title: 'My Skills',
+     description: '"With the ability to write clear, structured and optimized code, I always aim to create interactive, smooth and user-friendly interfaces. I also regularly update myself with the latest trends and technologies, applying them to projects to bring about advanced, efficient and technically demanding products."',
      skillList: [
           {
                icon: <FaHtml5 />,
@@ -192,7 +157,7 @@ const Resume = () => {
                               <TabsTrigger value="experience">Experience</TabsTrigger>
                               <TabsTrigger value="education">Education</TabsTrigger>
                               <TabsTrigger value="skills">Skills</TabsTrigger>
-                              <TabsTrigger value="about">About me</TabsTrigger>
+                              <TabsTrigger value="about">About Me</TabsTrigger>
                          </TabsList>
                          {/* Content */}
                          <div className="min-h-[70vh] w-full">

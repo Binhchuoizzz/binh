@@ -7,8 +7,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
-
-
+import emailjs from 'emailjs-com';
+import React, { useRef } from 'react';
 const info = [
   {
     icon: <FaPhoneAlt />,
@@ -30,6 +30,24 @@ const info = [
 import { motion } from "framer-motion";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_t06khgk', 'template_2q5kuo5', form.current, 'c2ClFX_iXCeYdNval')
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Email sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send email.");
+        }
+      );
+  };
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -43,7 +61,7 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* Form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" ref={form} onSubmit={sendEmail}>
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsa molestias architecto accusamus temporibus repellat? Eos excepturi consequatur saepe in temporibus vel reprehenderit, nisi dicta voluptatem adipisci blanditiis accusantium ut. </p>
               {/* Input */}
@@ -51,27 +69,31 @@ const Contact = () => {
                 <Input
                   type="firstname"
                   placeholder="Firstname"
+                  required
                 />
                 <Input
                   type="lastname"
                   placeholder="Lastname"
+                  required
                 />
                 <Input
                   type="email"
                   placeholder="Email Address"
+                  required
                 />
                 <Input
                   type="phone"
                   placeholder="Phone Number"
+                  required
                 />
               </div>
               {/* Select */}
               <Select>
                 <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service" />
+                  <SelectValue placeholder="Select a service" required />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectGroup>
+                  <SelectGroup >
                     <SelectLabel>Select a service</SelectLabel>
                     <SelectItem value="est">Web Development</SelectItem>
                     <SelectItem value="cst">UI/UX Design</SelectItem>
@@ -81,8 +103,9 @@ const Contact = () => {
               </Select>
               {/* textarea */}
               <Textarea
-                placeholder="Tyoe your message here..."
+                placeholder="Type your message here..."
                 className="h-[200px]"
+                required
               />
               {/* Btn */}
               <Button size="md" class="max-w-40">

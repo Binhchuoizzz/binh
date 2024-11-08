@@ -23,7 +23,7 @@ import WorkSlideBtns from "@/components/WorkSlideBtns";
 const projects = [
      {
           num: '01',
-          category: 'frontend',
+          category: 'CVE Alerts System',
           title: 'Project 1',
           description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam maiores, rerum tenetur enim sint! Ducimus sed tenetur perspiciatis dignissimos nulla repudiandae veritatis, error incidunt ipsam est rerum perferendis? Placeat!',
           stack: [
@@ -33,7 +33,7 @@ const projects = [
           ],
           image: '/assets/work/thumb1.png',
           live: "",
-          github: "",
+          github: "https://github.com/Binhchuoiz/CapstoneProject?fbclid=IwY2xjawGbEvJleHRuA2FlbQIxMAABHVqOmlDWgA_W4Synyz8-mBr6Pf57wrjND2s7ZMQN4KfEqfFV9xdmSPoLwQ_aem_r_e2R0caa9JvUS6DRbog8A",
      },
      {
           num: '02',
