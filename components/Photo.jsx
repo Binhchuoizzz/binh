@@ -26,7 +26,7 @@ const Photo = () => {
                               fill
                               alt="Binh's Picture"
                               className="object-contain"
-                              title="Binh" />
+                              title="I Am Binh 😁" />
                     </motion.div>
                     {/* Circle */}
                     <motion.svg
