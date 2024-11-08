@@ -7,7 +7,7 @@ const socials = [
      {icon: <FaFacebook/>, path: 'https://www.facebook.com/toi.binhducnguyen/'},
      {icon: <FaLinkedinIn/>, path: 'https://www.linkedin.com/in/cve-alert-b700302b2/'},
      {icon: <FaInstagram/>, path: 'https://www.instagram.com/binhchuoiz/?next=%2F'},
-     {icon: <FaPhone/>, path: '0922818727'},
+     {icon: <FaPhone/>, path: 'https://zalo.me/0922818727'},
 
 ]
 
